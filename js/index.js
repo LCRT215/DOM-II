@@ -8,7 +8,7 @@ const navText = Array.from(document.getElementsByClassName("nav-link"));
 // });
 navText.forEach(link => {
   link.addEventListener("click", ev => {
-    link.style.color = "lightblue";
+    link.style.color = "#FCB94C ";
   });
 });
 
@@ -56,11 +56,30 @@ img.forEach(img => {
   });
 });
 
-// P
+// P TAGS
 
 const pText = Array.from(document.getElementsByTagName("p"));
-console.log(pText);
+//console.log(pText);
 
 pText.forEach(para => {
-  para.addEventListener("mouseover");
+  para.addEventListener("mouseover", ev => {
+    para.style.color = "#FCB94C";
+  });
+  para.addEventListener("mouseleave", ev => {
+    para.style.color = "black";
+  });
+});
+
+//FUN BUS
+
+const logo = Array.from(document.getElementsByClassName("logo-heading"));
+//console.log(logo);
+
+logo.forEach(para => {
+  para.addEventListener("mouseover", ev => {
+    para.style.color = "#FCB94C";
+  });
+  para.addEventListener("mouseleave", ev => {
+    para.style.color = "black";
+  });
 });
